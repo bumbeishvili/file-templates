@@ -166,7 +166,7 @@ export class Chart {
         var containerRect = d3Container.node().getBoundingClientRect();
         if (containerRect.width > 0) attrs.svgWidth = containerRect.width;
 
-        d3.select(window).on("resize." + attrs.id, function () {
+        d3.select(window).on("resize." + attrs.id,  ()=> {
             var containerRect = d3Container.node().getBoundingClientRect();
             if (containerRect.width > 0) attrs.svgWidth = containerRect.width;
             this.render();
