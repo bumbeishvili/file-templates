@@ -1,6 +1,6 @@
 <script>
 	import { onMount } from 'svelte';
-	import { API } from '../../shared/API';
+	
 
 	import { Chart } from './chart.d3';
 
